@@ -17,3 +17,6 @@ RemoteFanmodServer
 ==================
 The code executing FANMOD package. This code also wraps FANMOD by allowing input networks with node names rather than only integers.
 
+www.zip
+========
+The html, JS, css code of the MotifNet website that is implemented using React and SemanticUI libraries.
