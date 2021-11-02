@@ -1,0 +1,124 @@
+2015-12-09 10:11:59,118 - server - INFO - logger created.
+Traceback (most recent call last):
+  File "start.py", line 47, in <module>
+    runner.start()
+  File "/home/skuper/workspace/MotifNetNew/RPC-Server/Daemon.py", line 86, in start
+    self.run()
+  File "start.py", line 32, in run
+    requestHandler=RequestHandler)
+  File "/usr/lib/python2.7/SimpleXMLRPCServer.py", line 593, in __init__
+    SocketServer.TCPServer.__init__(self, addr, requestHandler, bind_and_activate)
+  File "/usr/lib/python2.7/SocketServer.py", line 419, in __init__
+    self.server_bind()
+  File "/usr/lib/python2.7/SocketServer.py", line 430, in server_bind
+    self.socket.bind(self.server_address)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 99] Cannot assign requested address
+2015-12-09 10:13:50,343 - server - INFO - logger created.
+Traceback (most recent call last):
+  File "start.py", line 47, in <module>
+    runner.start()
+  File "/home/skuper/workspace/MotifNetNew/RPC-Server/Daemon.py", line 86, in start
+    self.run()
+  File "start.py", line 39, in run
+    server.register_instance(ServerState(logger))
+  File "/home/skuper/workspace/MotifNetNew/RPC-Server/API/ServerState.py", line 35, in __init__
+    self.sqlConnection = DBConnection(Conf.host,Conf.user,Conf.password,Conf.port,Conf.db )
+  File "/home/skuper/workspace/MotifNetNew/RPC-Server/API/DBConnection.py", line 92, in __init__
+    DBConnection.__instance = DBConnection.__impl(host, user, passwd,port, db)
+  File "/home/skuper/workspace/MotifNetNew/RPC-Server/API/DBConnection.py", line 24, in __init__
+    self.__connect()
+  File "/home/skuper/workspace/MotifNetNew/RPC-Server/API/DBConnection.py", line 32, in __connect
+    self.port)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 187, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+_mysql_exceptions.OperationalError: (2005, "Unknown MySQL server host 'netbio.med.ad.bgu.ac.il' (2)")
+2015-12-09 12:05:14,564 - server - INFO - logger created.
+Traceback (most recent call last):
+  File "start.py", line 47, in <module>
+    runner.start()
+  File "/home/skuper/workspace/MotifNetNew/RPC-Server/Daemon.py", line 86, in start
+    self.run()
+  File "start.py", line 39, in run
+    server.register_instance(ServerState(logger))
+  File "/home/skuper/workspace/MotifNetNew/RPC-Server/API/ServerState.py", line 35, in __init__
+    self.sqlConnection = DBConnection(Conf.host,Conf.user,Conf.password,Conf.port,Conf.db )
+  File "/home/skuper/workspace/MotifNetNew/RPC-Server/API/DBConnection.py", line 92, in __init__
+    DBConnection.__instance = DBConnection.__impl(host, user, passwd,port, db)
+  File "/home/skuper/workspace/MotifNetNew/RPC-Server/API/DBConnection.py", line 24, in __init__
+    self.__connect()
+  File "/home/skuper/workspace/MotifNetNew/RPC-Server/API/DBConnection.py", line 32, in __connect
+    self.port)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 187, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+_mysql_exceptions.OperationalError: (1045, "Access denied for user 'motifnet'@'132.72.93.206' (using password: YES)")
+2015-12-09 12:08:24,753 - server - INFO - logger created.
+Traceback (most recent call last):
+  File "start.py", line 47, in <module>
+    runner.start()
+  File "/home/skuper/workspace/MotifNetNew/RPC-Server/Daemon.py", line 86, in start
+    self.run()
+  File "start.py", line 39, in run
+    server.register_instance(ServerState(logger))
+  File "/home/skuper/workspace/MotifNetNew/RPC-Server/API/ServerState.py", line 35, in __init__
+    self.sqlConnection = DBConnection(Conf.host,Conf.user,Conf.password,Conf.port,Conf.db )
+  File "/home/skuper/workspace/MotifNetNew/RPC-Server/API/DBConnection.py", line 92, in __init__
+    DBConnection.__instance = DBConnection.__impl(host, user, passwd,port, db)
+  File "/home/skuper/workspace/MotifNetNew/RPC-Server/API/DBConnection.py", line 24, in __init__
+    self.__connect()
+  File "/home/skuper/workspace/MotifNetNew/RPC-Server/API/DBConnection.py", line 32, in __connect
+    self.port)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 187, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+_mysql_exceptions.OperationalError: (1045, "Access denied for user 'motifnet'@'132.72.93.206' (using password: YES)")
+2015-12-09 12:11:39,779 - server - INFO - logger created.
+2015-12-09 12:11:39,780 - server - INFO - registering ServerState instance.
+Traceback (most recent call last):
+  File "start.py", line 48, in <module>
+    runner.start()
+  File "/home/skuper/workspace/MotifNetNew/RPC-Server/Daemon.py", line 86, in start
+    self.run()
+  File "start.py", line 39, in run
+    server.register_instance(ServerState(logger))
+  File "/home/skuper/workspace/MotifNetNew/RPC-Server/API/ServerState.py", line 35, in __init__
+    self.sqlConnection = DBConnection(Conf.host,Conf.user,Conf.password,Conf.port,Conf.db )
+  File "/home/skuper/workspace/MotifNetNew/RPC-Server/API/DBConnection.py", line 92, in __init__
+    DBConnection.__instance = DBConnection.__impl(host, user, passwd,port, db)
+  File "/home/skuper/workspace/MotifNetNew/RPC-Server/API/DBConnection.py", line 24, in __init__
+    self.__connect()
+  File "/home/skuper/workspace/MotifNetNew/RPC-Server/API/DBConnection.py", line 32, in __connect
+    self.port)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 187, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+_mysql_exceptions.OperationalError: (1045, "Access denied for user 'motifnet'@'132.72.93.206' (using password: YES)")
+2015-12-21 17:03:17,233 - server - INFO - logger created.
+2015-12-21 17:03:17,262 - server - INFO - registering ServerState instance.
+Traceback (most recent call last):
+  File "start.py", line 48, in <module>
+    runner.start()
+  File "/home/skuper/workspace/MotifNetNew/RPC-Server/Daemon.py", line 86, in start
+    self.run()
+  File "start.py", line 39, in run
+    server.register_instance(ServerState(logger))
+  File "/home/skuper/workspace/MotifNetNew/RPC-Server/API/ServerState.py", line 35, in __init__
+    self.sqlConnection = DBConnection(Conf.host,Conf.user,Conf.password,Conf.port,Conf.db )
+  File "/home/skuper/workspace/MotifNetNew/RPC-Server/API/DBConnection.py", line 92, in __init__
+    DBConnection.__instance = DBConnection.__impl(host, user, passwd,port, db)
+  File "/home/skuper/workspace/MotifNetNew/RPC-Server/API/DBConnection.py", line 24, in __init__
+    self.__connect()
+  File "/home/skuper/workspace/MotifNetNew/RPC-Server/API/DBConnection.py", line 32, in __connect
+    self.port)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 187, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+_mysql_exceptions.OperationalError: (1045, "Access denied for user 'motifnet'@'132.72.92.101' (using password: YES)")
