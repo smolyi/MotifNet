@@ -1,5 +1,5 @@
 # MotifNet
-Identify network motifs using FANMOD algorithm, which was developed and published by Sebastian Wernicke and Florian Rasche [https://academic.oup.com/bioinformatics/article/22/9/1152/199945]. Network motifs are small topological patterns that recur in a network significantly more often than expected by chance.
+Identify network motifs using the FANMOD algorithm, which was developed and published by Sebastian Wernicke and Florian Rasche [https://academic.oup.com/bioinformatics/article/22/9/1152/199945]. Network motifs are small topological patterns that recur in a network significantly more often than expected by chance.
 
 The code here is the server-side implementation of the MotifNet web-server [https://netbio.bgu.ac.il/motifnet/#/].
 
