@@ -7,11 +7,11 @@ MotifNet was published as scientific web-tool in a peer-reviewed journal [https:
 
 cgi-bin
 =======
-The cgi-bin folder which recieves request from the website (the client-side). In this folder, scripts will either defer the request to the RPC-Server, which hold user-data in memory, or execute new processes (e.g. run FANMOD, delete sessions, etc.; depends on the request).
+The cgi-bin folder which recieves requests from the website (the client-side). In this folder, scripts will either defer the request to the RPC-Server (using the RPC-Client), or execute new processes (e.g. run FANMOD, delete sessions, etc.; depends on the request).
 
 RPC-Server
 ==========
-The RPC-server, which communicates with the database and stores user-data on the server's memory for fast queries.
+The RPC-server is a processes that constently run on the server, communicates with the database and stores user-data on the server's memory for fast queries.
 
 RemoteFanmodServer
 ==================
