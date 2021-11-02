@@ -1,0 +1,105 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module fanmodGraph</title>
+<meta charset="utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>fanmodGraph</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/skuper/workspace/MotifNetNew/cgi-bin/JobSubmissionPackage/Includes/fanmodGraph.py">/home/skuper/workspace/MotifNetNew/cgi-bin/JobSubmissionPackage/Includes/fanmodGraph.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="os.html">os</a><br>
+</td><td width="25%" valign=top><a href="pickle.html">pickle</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="fanmodGraph.html#Edge">Edge</a>
+</font></dt><dt><font face="helvetica, arial"><a href="fanmodGraph.html#FanmodGraph">FanmodGraph</a>
+</font></dt><dt><font face="helvetica, arial"><a href="fanmodGraph.html#Node">Node</a>
+</font></dt></dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Edge">class <strong>Edge</strong></a></font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Edge-__init__"><strong>__init__</strong></a>(self, node1, node2, color<font color="#909090">=0</font>, direction<font color="#909090">=0</font>, delim<font color="#909090">='<font color="#c040c0">\t</font>'</font>)</dt></dl>
+
+<dl><dt><a name="Edge-__str__"><strong>__str__</strong></a>(self)</dt></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>color</strong> = 0</dl>
+
+<dl><dt><strong>direction</strong> = 0</dl>
+
+<dl><dt><strong>node1</strong> = None</dl>
+
+<dl><dt><strong>node2</strong> = None</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="FanmodGraph">class <strong>FanmodGraph</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>this&nbsp;object&nbsp;creates&nbsp;a&nbsp;fanmod&nbsp;graph,&nbsp;according&nbsp;to&nbsp;Fanmod&nbsp;input&nbsp;standards.<br>
+@param&nbsp;graph_target:&nbsp;string&nbsp;-&nbsp;path&nbsp;of&nbsp;target&nbsp;file&nbsp;where&nbsp;the&nbsp;graph&nbsp;will&nbsp;be&nbsp;dumped.<br>
+@param&nbsp;dict_target:&nbsp;string&nbsp;-&nbsp;path&nbsp;to&nbsp;a&nbsp;location&nbsp;where&nbsp;the&nbsp;dictionaries&nbsp;will&nbsp;be&nbsp;dumped.&nbsp;&nbsp;&nbsp;&nbsp;1)&nbsp;that&nbsp;will&nbsp;translate&nbsp;the&nbsp;ids&nbsp;to&nbsp;their&nbsp;integer&nbsp;labels&nbsp;and&nbsp;colors.<br>
+2)&nbsp;that&nbsp;will&nbsp;translate&nbsp;the&nbsp;integers&nbsp;back&nbsp;to&nbsp;their&nbsp;original&nbsp;ids,<br>
+@param&nbsp;edges:&nbsp;list&nbsp;of&nbsp;strings&nbsp;-&nbsp;each&nbsp;string&nbsp;is&nbsp;a&nbsp;path&nbsp;to&nbsp;an&nbsp;edges&nbsp;file&nbsp;and&nbsp;will&nbsp;be&nbsp;colored&nbsp;differentially,&nbsp;so&nbsp;the&nbsp;color&nbsp;number&nbsp;of&nbsp;the&nbsp;edges&nbsp;in&nbsp;a&nbsp;file&nbsp;correspond&nbsp;to&nbsp;its&nbsp;number&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;For&nbsp;instance,&nbsp;the&nbsp;edges&nbsp;in&nbsp;the&nbsp;first&nbsp;file&nbsp;will&nbsp;be&nbsp;colored&nbsp;[1]).&nbsp;the&nbsp;files&nbsp;must&nbsp;be&nbsp;tab&nbsp;delimited.<br>
+@param&nbsp;nodes:&nbsp;list&nbsp;of&nbsp;strings&nbsp;-&nbsp;each&nbsp;string&nbsp;is&nbsp;a&nbsp;path&nbsp;to&nbsp;nodes&nbsp;file&nbsp;and&nbsp;will&nbsp;be&nbsp;colored&nbsp;differentially.&nbsp;all&nbsp;the&nbsp;nodes&nbsp;that&nbsp;do&nbsp;not&nbsp;appear&nbsp;in&nbsp;any&nbsp;of&nbsp;the&nbsp;files&nbsp;supplied&nbsp;will&nbsp;be&nbsp;colored&nbsp;in&nbsp;a&nbsp;different&nbsp;color.<br>
+@param&nbsp;reverse:&nbsp;OPTIONAL&nbsp;list&nbsp;of&nbsp;booleans&nbsp;-&nbsp;for&nbsp;each&nbsp;edges&nbsp;file,&nbsp;determine&nbsp;whether&nbsp;the&nbsp;edges&nbsp;(indexes&nbsp;must&nbsp;correspond&nbsp;to&nbsp;@edges)&nbsp;should&nbsp;be&nbsp;bi-directional&nbsp;or&nbsp;not.&nbsp;DEFAULT&nbsp;is&nbsp;false&nbsp;for&nbsp;all&nbsp;edges.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="FanmodGraph-__init__"><strong>__init__</strong></a>(self, graph_target, dict_target, edges, nodes, reverse<font color="#909090">=None</font>)</dt><dd><tt>Parameters<br>
+----------<br>
+graph_target:&nbsp;string<br>
+&nbsp;&nbsp;&nbsp;&nbsp;path&nbsp;of&nbsp;target&nbsp;file&nbsp;where&nbsp;the&nbsp;graph&nbsp;will&nbsp;be&nbsp;dumped.<br>
+&nbsp;<br>
+@param&nbsp;dict_target:&nbsp;string&nbsp;-&nbsp;path&nbsp;to&nbsp;a&nbsp;location&nbsp;where&nbsp;the&nbsp;dictionaries&nbsp;will&nbsp;be&nbsp;dumped.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1)&nbsp;that&nbsp;will&nbsp;translate&nbsp;the&nbsp;ids&nbsp;to&nbsp;their&nbsp;integer&nbsp;labels&nbsp;and&nbsp;colors.<br>
+2)&nbsp;that&nbsp;will&nbsp;translate&nbsp;the&nbsp;integers&nbsp;back&nbsp;to&nbsp;their&nbsp;original&nbsp;ids,<br>
+@param&nbsp;edges:&nbsp;list&nbsp;of&nbsp;strings&nbsp;-&nbsp;each&nbsp;string&nbsp;is&nbsp;a&nbsp;path&nbsp;to&nbsp;an&nbsp;edges&nbsp;file&nbsp;and&nbsp;will&nbsp;be&nbsp;colored&nbsp;differentially,&nbsp;so&nbsp;the&nbsp;color&nbsp;number&nbsp;of&nbsp;the&nbsp;edges&nbsp;in&nbsp;a&nbsp;file&nbsp;correspond&nbsp;to&nbsp;its&nbsp;number&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For&nbsp;instance,&nbsp;the&nbsp;edges&nbsp;in&nbsp;the&nbsp;first&nbsp;file&nbsp;will&nbsp;be&nbsp;colored&nbsp;[1]).&nbsp;the&nbsp;files&nbsp;must&nbsp;be&nbsp;tab&nbsp;delimited.<br>
+@param&nbsp;nodes:&nbsp;list&nbsp;of&nbsp;strings&nbsp;-&nbsp;each&nbsp;string&nbsp;is&nbsp;a&nbsp;path&nbsp;to&nbsp;nodes&nbsp;file&nbsp;and&nbsp;will&nbsp;be&nbsp;colored&nbsp;differentially.&nbsp;all&nbsp;the&nbsp;nodes&nbsp;that&nbsp;do&nbsp;not&nbsp;appear&nbsp;in&nbsp;any&nbsp;of&nbsp;the&nbsp;files&nbsp;supplied&nbsp;will&nbsp;be&nbsp;colored&nbsp;in&nbsp;a&nbsp;different&nbsp;color.<br>
+@param&nbsp;reverse:&nbsp;OPTIONAL&nbsp;list&nbsp;of&nbsp;booleans&nbsp;-&nbsp;for&nbsp;each&nbsp;edges&nbsp;file,&nbsp;determine&nbsp;whether&nbsp;the&nbsp;edges&nbsp;(indexes&nbsp;must&nbsp;correspond&nbsp;to&nbsp;@edges)&nbsp;should&nbsp;be&nbsp;bi-directional&nbsp;or&nbsp;not.&nbsp;DEFAULT&nbsp;is&nbsp;false&nbsp;for&nbsp;all&nbsp;edges.</tt></dd></dl>
+
+<dl><dt><a name="FanmodGraph-dump"><strong>dump</strong></a>(self, fpath)</dt></dl>
+
+<dl><dt><a name="FanmodGraph-dumpDict"><strong>dumpDict</strong></a>(self, target)</dt></dl>
+
+<dl><dt><a name="FanmodGraph-getMax"><strong>getMax</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="FanmodGraph-handleNode"><strong>handleNode</strong></a>(self, node)</dt></dl>
+
+<dl><dt><a name="FanmodGraph-loadEdges"><strong>loadEdges</strong></a>(self, files, reverse, delim<font color="#909090">='<font color="#c040c0">\t</font>'</font>)</dt></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Node">class <strong>Node</strong></a></font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Node-__init__"><strong>__init__</strong></a>(self, ID, color<font color="#909090">=None</font>)</dt></dl>
+
+</td></tr></table></td></tr></table>
+</body></html>
