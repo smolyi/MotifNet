@@ -1,1 +1,44 @@
-
+2015-12-20 13:32:25,314 - executor - DEBUG - -1
+2015-12-20 13:33:01,789 - executor - DEBUG - -1
+2015-12-20 13:37:04,584 - executor - DEBUG - -1
+2015-12-20 13:37:24,171 - executor - DEBUG - -1
+2015-12-20 13:37:50,048 - executor - DEBUG - -1
+2015-12-20 13:37:50,160 - executor - INFO - creating daemon directory - [Sessions/sample/daemon]
+2015-12-20 13:38:10,475 - executor - DEBUG - -1
+2015-12-20 13:38:10,475 - executor - INFO - creating daemon directory - [Sessions/sample/daemon]
+2015-12-20 13:39:32,643 - executor - DEBUG - -1
+2015-12-20 13:39:47,506 - executor - DEBUG - -1
+2015-12-20 13:39:47,507 - executor - INFO - creating daemon directory - [Sessions/-1/daemon]
+2015-12-20 13:40:00,464 - executor - DEBUG - 1
+2015-12-20 13:40:00,465 - executor - INFO - creating daemon directory - [Sessions/1/daemon]
+2015-12-20 13:40:11,766 - executor - DEBUG - 1
+2015-12-20 13:40:11,767 - executor - INFO - creating daemon directory - [Sessions/1/daemon]
+2015-12-20 13:40:11,767 - executor - DEBUG - None
+2015-12-20 13:40:11,767 - executor - INFO - executing daemon ...
+2015-12-20 13:46:16,767 - executor - DEBUG - 1
+2015-12-20 13:47:06,031 - executor - DEBUG - 1
+2015-12-20 13:47:06,032 - executor - INFO - creating daemon directory - [/home/skuper/workspace/MotifNetNew/cgi-bin/Sessions/sample/daemon]
+2015-12-20 13:47:06,032 - executor - DEBUG - None
+2015-12-20 13:47:06,032 - executor - INFO - executing daemon ...
+2015-12-20 13:47:27,307 - executor - DEBUG - 1
+2015-12-20 13:47:27,308 - executor - INFO - creating daemon directory - [/home/skuper/workspace/MotifNetNew/cgi-bin/Sessions/sample/daemon]
+2015-12-20 13:48:59,351 - executor - DEBUG - 1
+2015-12-20 13:48:59,351 - executor - INFO - creating daemon directory - [/home/skuper/workspace/MotifNetNew/cgi-bin/Sessions/sample/daemon]
+2015-12-20 13:48:59,351 - executor - WARNING - [Errno 17] File exists: '/home/skuper/workspace/MotifNetNew/cgi-bin/Sessions/sample/daemon'
+2015-12-20 13:48:59,351 - executor - INFO - executing daemon ...
+2015-12-20 13:52:37,604 - executor - DEBUG - 1
+2015-12-20 13:52:37,605 - executor - INFO - creating daemon directory - [/home/skuper/workspace/MotifNetNew/cgi-bin/Sessions/sample/daemon]
+2015-12-20 13:52:37,605 - executor - WARNING - [Errno 17] File exists: '/home/skuper/workspace/MotifNetNew/cgi-bin/Sessions/sample/daemon'
+2015-12-20 13:52:37,605 - executor - INFO - executing daemon ...
+2015-12-20 13:52:37,605 - executor - INFO - starting
+2015-12-20 13:53:18,421 - executor - DEBUG - 1
+2015-12-20 13:53:18,421 - executor - INFO - creating daemon directory - [/home/skuper/workspace/MotifNetNew/cgi-bin/Sessions/sample/daemon]
+2015-12-20 13:53:18,421 - executor - WARNING - [Errno 17] File exists: '/home/skuper/workspace/MotifNetNew/cgi-bin/Sessions/sample/daemon'
+2015-12-20 13:53:18,421 - executor - INFO - executing daemon ...
+2015-12-20 13:53:18,421 - executor - INFO - starting
+2015-12-20 13:56:00,670 - executor - DEBUG - 1
+2015-12-20 13:56:00,670 - executor - INFO - creating daemon directory - [/home/skuper/workspace/MotifNetNew/cgi-bin/Sessions/sample/daemon]
+2015-12-20 13:56:00,670 - executor - WARNING - [Errno 17] File exists: '/home/skuper/workspace/MotifNetNew/cgi-bin/Sessions/sample/daemon'
+2015-12-20 13:56:00,671 - executor - INFO - executing daemon ...
+2015-12-20 13:56:00,671 - executor - INFO - starting
+2015-12-20 14:08:06,206 - executor - INFO - executed
