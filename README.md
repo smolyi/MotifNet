@@ -1,5 +1,5 @@
 # MotifNet
-Identify network motifs using FANMOD algorithm, which was developed and published by Sebastian Wernicke and Florian Rasche [https://academic.oup.com/bioinformatics/article/22/9/1152/199945].
+Identify network motifs using FANMOD algorithm, which was developed and published by Sebastian Wernicke and Florian Rasche [https://academic.oup.com/bioinformatics/article/22/9/1152/199945]. Network motifs are small topological patterns that recur in a network significantly more often than expected by chance.
 
 The code here is the server-side implementation of the MotifNet web-server [https://netbio.bgu.ac.il/motifnet/#/].
 
@@ -11,7 +11,7 @@ The cgi-bin folder which recieves requests from the website (the client-side). I
 
 RPC-Server
 ==========
-The RPC-server is a processes that constently run on the server, communicates with the database and stores user-data on the server's memory for fast queries.
+The RPC-server is a processes that constently run on the server, communicates with the MySQL database and stores user-data on the server's memory for fast queries.
 
 RemoteFanmodServer
 ==================
