@@ -140,8 +140,8 @@ class FanmodOutputSubmissionDaemon(SubmissionDaemon):
                 from ssh import Connection
 
                 con = Connection(host = "netbio",
-                         username = "motifnet",
-                         password = "99motifnet",
+                         username = "",
+                         password = "",
                          port = 22)
                 self.logger.log(1, "connection = [%s]"%str(con))
                 cmd = Conf.RPC_RESTART_CMD
