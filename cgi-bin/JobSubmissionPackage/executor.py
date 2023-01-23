@@ -102,8 +102,8 @@ class Executor():
         try:
             
             con = Connection(host = "netbio-test.med.ad.bgu.ac.il",
-                     username = "motifnet",
-                     password = "99motifnet",
+                     username = "",
+                     password = "",
                      port = 22)
             self.logger.log(1, "connection = [%s]"%str(con))
             cmd = "python /media/disk2/users/motifnet/Websites/Product/RemoteFanmodServer/executor.py %d %s --email %s"%(self.jobId,self.userDirName, self.cgiHandler.email)
